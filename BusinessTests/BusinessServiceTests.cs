@@ -16,10 +16,11 @@ namespace Business.Tests
         [TestMethod()]
         public void GetEmployesTest()
         {
+            // arrange
             BusinessService businessService = new BusinessService(new MockStorage());
-
+            // act
             List<Employe> employes = businessService.GetEmployes();
-
+            // assert
             Assert.AreEqual(employes.Count, 2);
         }
     }

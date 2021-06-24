@@ -17,7 +17,7 @@ namespace Views
         {
             //Créer le container Unity
             IUnityContainer unitycontainer = new UnityContainer();
-            //Lie les implémentations aux interfaces correspondantes
+            //Lier les implémentations aux interfaces correspondantes
             unitycontainer.RegisterType<EmployeController, EmployeController>();
             unitycontainer.RegisterType<IBusinessService, BusinessService>();
             unitycontainer.RegisterType<IEmployeRepository, EmployeRepository>();
